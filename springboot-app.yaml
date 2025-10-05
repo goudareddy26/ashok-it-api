@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: springapp
+  name: ashokit
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: springboot-app
-  namespace: springapp
+  namespace: ashokit
 spec:
   replicas: 1
   selector:
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: springboot-app
-          image: goudareddy26/ashokit:v1
+          image: goudareddy26/ashokit:v2
           ports:
             - containerPort: 8080
 ---
@@ -28,7 +28,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: springboot-app-service
-  namespace: springapp
+  namespace: ashokit
 spec:
   type: NodePort
   selector:
