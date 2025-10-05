@@ -50,3 +50,22 @@ curl -v http://localhost:8080/   # or the app's actual context path
 
 - If using Windows and WSL/docker desktop, use localhost for host networking.
 
+Clean up and useful commands
+- Stop and remove container:
+ ```bash
+docker stop ashok-app
+docker rm ashok-app
+```
+
+- Remove image:
+ ```bash
+docker rmi goudareddy26/ashokit:latest
+```
+
+- Show local images:
+docker images
+```
+
+
+Short tips and gotc
+
