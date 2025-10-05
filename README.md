@@ -63,7 +63,7 @@ docker rmi goudareddy26/ashokit:latest
 ```
 
 - Show local images:
-  ```bash
+```bash
 docker images
 ```
 
