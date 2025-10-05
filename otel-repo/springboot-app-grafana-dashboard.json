@@ -1,0 +1,75 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "type": "graph",
+      "title": "JVM Heap Used (bytes)",
+      "targets": [
+        {
+          "expr": "jvm_memory_used_bytes{area=\"heap\"}",
+          "legendFormat": "{{instance}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "graph",
+      "title": "Process CPU Usage (%)",
+      "targets": [
+        {
+          "expr": "process_cpu_usage * 100",
+          "legendFormat": "{{instance}}",
+          "refId": "B"
+        }
+      ],
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "graph",
+      "title": "HTTP Request Duration (ms)",
+      "targets": [
+        {
+          "expr": "rate(http_server_duration_seconds_sum[1m]) / rate(http_server_duration_seconds_count[1m]) * 1000",
+          "legendFormat": "{{instance}}",
+          "refId": "C"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 }
+    },
+    {
+      "type": "graph",
+      "title": "Live Threads",
+      "targets": [
+        {
+          "expr": "jvm_threads_live",
+          "legendFormat": "{{instance}}",
+          "refId": "D"
+        }
+      ],
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 }
+    },
+    {
+      "type": "graph",
+      "title": "GC Pause Duration (seconds)",
+      "targets": [
+        {
+          "expr": "rate(jvm_gc_duration_seconds_sum[1m])",
+          "legendFormat": "{{instance}}",
+          "refId": "E"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 16, "w": 24, "h": 8 }
+    }
+  ],
+  "title": "Java App Metrics (OpenTelemetry)",
+  "schemaVersion": 36,
+  "version": 1,
+  "refresh": "10s",
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  }
+}
