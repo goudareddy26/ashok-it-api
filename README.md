@@ -63,9 +63,39 @@ docker rmi goudareddy26/ashokit:latest
 ```
 
 - Show local images:
+  ```bash
 docker images
 ```
 
+# Push image to Docker Hub
+1. Ensure the image has the correct name (you already do)
+Confirm the image tag points to your Docker Hub repo namespace:
+```bash
+docker images
+```
+# look for: goudareddy26/ashokit   v1
 
-Short tips and gotc
+
+2. Log in to Docker Hub (use a Docker Hub Access Token instead of account password)
+- Create an Access Token on Docker Hub: Docker Hub → Settings → Security → New Access Token.
+- Then log in from your shell:
+```bash
+docker login -u <username>
+docker login -u goudareddy26
+```
+# Username: goudareddy26
+# Password: **********
+
+
+3. Tag the image only if needed
+If your local image already is named exactly goudareddy26/ashokit:v1 you can skip this step. If not, retag it:
+Push the image
+```bash
+docker push goudareddy26/ashokit:v1
+```
+
+5. Verify successful push
+- Confirm success output from the push command.
+- Check on Docker Hub web UI under your repository goudareddy26/ashokit to see the v1 tag.
+
 
