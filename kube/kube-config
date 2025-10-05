@@ -1,0 +1,122 @@
+pwd
+/home/gogi
+gogi@gogi-ubuntu:~$ ls -l
+total 136648
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 21:05 Desktop
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Documents
+drwxr-xr-x 2 gogi gogi        4096 Oct  5 22:05 Downloads
+-rw-rw-r-- 1 gogi docker 139886451 Oct  4 20:01 minikube-linux-amd64
+-rw-rw-r-- 1 gogi gogi         107 Oct  4 21:04 minikube-notes.txt
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Music
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Pictures
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Public
+drwx------ 8 gogi gogi        4096 Oct  4 21:00 snap
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Templates
+drwxr-xr-x 2 gogi gogi        4096 Oct  4 17:11 Videos
+gogi@gogi-ubuntu:~$ ls -la
+total 136700
+drwxr-x--- 18 gogi gogi        4096 Oct  4 21:07 .
+drwxr-xr-x  3 root root        4096 Oct  4 17:11 ..
+-rw-------  1 gogi docker      3102 Oct  5 11:50 .bash_history
+-rw-r--r--  1 gogi gogi         220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 gogi gogi        3771 Mar 31  2024 .bashrc
+drwx------ 12 gogi gogi        4096 Oct  4 17:23 .cache
+drwx------ 15 gogi gogi        4096 Oct  4 21:07 .config
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 21:05 Desktop
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Documents
+drwxr-xr-x  2 gogi gogi        4096 Oct  5 22:05 Downloads
+drwx------  2 gogi gogi        4096 Oct  5 11:04 .gnupg
+drwxr-xr-x  3 gogi docker      4096 Oct  4 20:44 .kube
+drwx------  4 gogi gogi        4096 Oct  4 17:11 .local
+drwxr-xr-x 10 gogi docker      4096 Oct  5 22:03 .minikube
+-rw-rw-r--  1 gogi docker 139886451 Oct  4 20:01 minikube-linux-amd64
+-rw-rw-r--  1 gogi gogi         107 Oct  4 21:04 minikube-notes.txt
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Music
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Pictures
+-rw-r--r--  1 gogi gogi         807 Mar 31  2024 .profile
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Public
+drwx------  8 gogi gogi        4096 Oct  4 21:00 snap
+drwx------  2 gogi gogi        4096 Oct  4 17:12 .ssh
+-rw-r--r--  1 gogi gogi           0 Oct  4 19:54 .sudo_as_admin_successful
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Templates
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Videos
+gogi@gogi-ubuntu:~$ pwd
+/home/gogi
+gogi@gogi-ubuntu:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.6M  1.6G   1% /run
+/dev/nvme0n1p6  100G   16G   80G  16% /
+tmpfs           7.7G     0  7.7G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+efivarfs        268K  224K   40K  85% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  256M   49M  208M  19% /boot/efi
+tmpfs           1.6G  124K  1.6G   1% /run/user/1000
+gogi@gogi-ubuntu:~$ ls -la
+total 136700
+drwxr-x--- 18 gogi gogi        4096 Oct  4 21:07 .
+drwxr-xr-x  3 root root        4096 Oct  4 17:11 ..
+-rw-------  1 gogi docker      3102 Oct  5 11:50 .bash_history
+-rw-r--r--  1 gogi gogi         220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 gogi gogi        3771 Mar 31  2024 .bashrc
+drwx------ 12 gogi gogi        4096 Oct  4 17:23 .cache
+drwx------ 15 gogi gogi        4096 Oct  4 21:07 .config
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 21:05 Desktop
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Documents
+drwxr-xr-x  2 gogi gogi        4096 Oct  5 22:05 Downloads
+drwx------  2 gogi gogi        4096 Oct  5 11:04 .gnupg
+drwxr-xr-x  3 gogi docker      4096 Oct  4 20:44 .kube
+drwx------  4 gogi gogi        4096 Oct  4 17:11 .local
+drwxr-xr-x 10 gogi docker      4096 Oct  5 22:03 .minikube
+-rw-rw-r--  1 gogi docker 139886451 Oct  4 20:01 minikube-linux-amd64
+-rw-rw-r--  1 gogi gogi         107 Oct  4 21:04 minikube-notes.txt
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Music
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Pictures
+-rw-r--r--  1 gogi gogi         807 Mar 31  2024 .profile
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Public
+drwx------  8 gogi gogi        4096 Oct  4 21:00 snap
+drwx------  2 gogi gogi        4096 Oct  4 17:12 .ssh
+-rw-r--r--  1 gogi gogi           0 Oct  4 19:54 .sudo_as_admin_successful
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Templates
+drwxr-xr-x  2 gogi gogi        4096 Oct  4 17:11 Videos
+gogi@gogi-ubuntu:~$ cd .kube/cache/
+discovery/ http/      
+gogi@gogi-ubuntu:~$ cd .kube/
+gogi@gogi-ubuntu:~/.kube$ ls -l
+total 8
+drwxr-x--- 4 gogi docker 4096 Oct  4 20:44 cache
+-rw------- 1 gogi docker  821 Oct  5 22:03 config
+gogi@gogi-ubuntu:~/.kube$ cat config 
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /home/gogi/.minikube/ca.crt
+    extensions:
+    - extension:
+        last-update: Sun, 05 Oct 2025 22:03:49 IST
+        provider: minikube.sigs.k8s.io
+        version: v1.37.0
+      name: cluster_info
+    server: https://192.168.49.2:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    extensions:
+    - extension:
+        last-update: Sun, 05 Oct 2025 22:03:49 IST
+        provider: minikube.sigs.k8s.io
+        version: v1.37.0
+      name: context_info
+    namespace: default
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: /home/gogi/.minikube/profiles/minikube/client.crt
+    client-key: /home/gogi/.minikube/profiles/minikube/client.key
+gogi@gogi-ubuntu:~/.kube$ 
+
