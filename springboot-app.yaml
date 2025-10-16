@@ -18,6 +18,7 @@ spec:
       labels:
         app: springboot-app
     spec:
+      serviceAccountName: ashokit-deployer
       containers:
         - name: springboot-app
           image: goudareddy26/ashokit:v2
