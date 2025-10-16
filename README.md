@@ -106,14 +106,14 @@ https://github.com/goudareddy26/ashok-it-api/tree/main, it has manifest
 springboot-app.yaml , I want to deploy this on minikube using jenkins pipeline, I have tested the integration with a pipeline and its working
 
 now I want to add RBAC rules yamls to this repo which are required for this deployment and test them before deploying this above springboot-app.yaml.
-
+bash ``` 
 ashok-it-api/
 ├── k8s-rbac/
 │   ├── service-account.yaml
 │   ├── role.yaml
 │   ├── rolebinding.yaml
 └── springboot-app.yaml
-
+``` 
 
 Two options available
 1.Authentication with GitHub using SSH
