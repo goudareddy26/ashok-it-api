@@ -122,12 +122,12 @@ Two options available
 option 1: Authentication with GitHub using HTTPS and a Personal Access Token
 
 Configure credential helper and Git identity
-	  ```
+	  bash```
    git config --global credential.helper store
    git config --global user.name "Your Name"
    git config --global user.email "your.email@example.com"
    ```
- ```   
+bash ```   
 git checkout -b f-rbac-rules
 Switched to a new branch 'f-rbac-rules'
 gogi@gogi-ubuntu:~/ashok-it-api$ git branch 
@@ -137,7 +137,8 @@ gogi@gogi-ubuntu:~/ashok-it-api$ git branch
 
 create folder  k8s-rbac under ashok-it-api 
 add all three manifest files under k8s-rbac foldr
- ```
+
+ bash```
 git status
 On branch f-rbac-rules
 Changes to be committed:
@@ -146,18 +147,18 @@ Changes to be committed:
 	new file:   k8s-rbac/rolebinding.yaml
 	new file:   k8s-rbac/service-account.yaml
  ```
-  ```
+ bash ```
 git commit -m "added rbac rule manifest files"
  ```
 
- ```
+bash ```
 git config --global credential.helper store
 gogi@gogi-ubuntu:~$ git config --global user.name goudareddy26
 gogi@gogi-ubuntu:~$ git config --global user.email goudareddy26@gmail.com
  ```
 
 
- ```
+bash ```
 git push -u origin f-rbac-rules 
 Username for 'https://github.com': goudareddy26
 Password for 'https://goudareddy26@github.com': 
@@ -187,7 +188,7 @@ In your terminal (as user gogi):
 git remote set-url origin https://<YOUR_USERNAME>@github.com/goudareddy26/ashok-it-api.git
 
 Then push like this:
- ```
+bash ```
 git push -u origin f-rbac-rules
 Username: goudareddy26
 Password: <paste your Personal Access Token here>
@@ -196,11 +197,11 @@ Password: <paste your Personal Access Token here>
 🪄 Step 3 (Optional): Save Token in Git Credential Store
 
 You can store the token to avoid retyping:
- ```
+bash ```
  git config --global credential.helper store
  ```
 Then the next push will save credentials in ~/.git-credentials.
- ```
+ bash```
 git push -u origin f-rbac-rules
  ```
 Username for 'https://github.com': goudareddy26
