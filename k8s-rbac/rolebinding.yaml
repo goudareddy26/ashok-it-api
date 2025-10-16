@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ashokit-deploy-binding
+  namespace: ashokit
+subjects:
+  - kind: ServiceAccount
+    name: ashokit-deployer
+    namespace: ashokit
+roleRef:
+  kind: Role
+  name: ashokit-deploy-role
+  apiGroup: rbac.authorization.k8s.io
+
